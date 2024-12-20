@@ -24,6 +24,8 @@
 ### Увеличение арсенала в игре Save RTF
 Была создана таблица, содержащая информацию о характеристиках оружия, таких как урон и шанс попадания. Для этого использовал Google таблицы: Google Sheets (https://docs.google.com/spreadsheets/d/12V0fRsdPyaTffW7ctOaCRHxkH1Bxn4dfSq2ouFk-yuQ/edit?gid=0#gid=0).
 
+![image](https://github.com/user-attachments/assets/37acfb0b-3eb0-4edf-8cd8-6ad61aa5878f)
+
 В ходе тестирования различных видов оружия, при здоровье первого босса, равном 1000 единиц, были вычислены средние значения урона и частоты атак. Расчетные формулы:
 
 1. Урон: Урон = ХП босса / Количество ударов или патронов
@@ -32,6 +34,7 @@
 
 Примерный урон каждого типа оружия:
 
+```py
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -44,6 +47,18 @@ plt.title('Средний урон разных видов оружия')
 plt.xlabel('Тип оружия')
 plt.ylabel('Средний урон')
 plt.show()
+```
+
+ДО БАЛАНСИРОВКИ
+
+![image](https://github.com/user-attachments/assets/8950fbe9-d516-4fde-9ca4-db25086c429c)
+![image](https://github.com/user-attachments/assets/2a23a7dc-83cb-418c-b44b-de216cce84af)
+
+ПОСЛЕ БАЛАНСИРОВКИ
+
+![image](https://github.com/user-attachments/assets/d785c64f-3062-42b5-bcad-78895712678e)
+![image](https://github.com/user-attachments/assets/2699cdc2-3dfa-4877-8efa-8a32087ddc81)
+
 
 
 ## Задание 2
